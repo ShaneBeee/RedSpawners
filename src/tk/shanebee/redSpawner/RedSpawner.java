@@ -4,6 +4,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+import tk.shanebee.redSpawner.metrics.Metrics;
 
 public class RedSpawner extends JavaPlugin implements Listener {
 
@@ -11,6 +12,7 @@ public class RedSpawner extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        Metrics metrics = new Metrics(this);
         String pl = ChatColor.GRAY + "[" + ChatColor.LIGHT_PURPLE + "RedSpawner" +
                 ChatColor.GRAY + "]";
         String enable = ChatColor.GREEN + "Successfully loaded";
