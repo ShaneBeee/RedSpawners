@@ -52,7 +52,7 @@ public class Commands implements CommandExecutor{
                         return false;
                     }
 
-                    ItemStack spawner = new ItemStack(Material.SPAWNER);
+                    ItemStack spawner = new ItemStack(Material.MOB_SPAWNER);
                     ItemMeta meta = spawner.getItemMeta();
                     ArrayList<String> lore = new ArrayList<>();
                     meta.setDisplayName(ChatColor.AQUA + "Mob Spawner");

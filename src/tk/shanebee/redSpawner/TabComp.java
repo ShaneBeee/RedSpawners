@@ -32,7 +32,7 @@ public class TabComp implements TabCompleter {
             EntityType.MINECART, EntityType.MINECART_CHEST, EntityType.MINECART_COMMAND, EntityType.MINECART_FURNACE,
             EntityType.MINECART_HOPPER, EntityType.MINECART_MOB_SPAWNER, EntityType.MINECART_TNT, EntityType.PAINTING,
             EntityType.PRIMED_TNT, EntityType.SHULKER_BULLET, EntityType.SMALL_FIREBALL, EntityType.SNOWBALL, EntityType.SPECTRAL_ARROW,
-            EntityType.SPLASH_POTION, EntityType.THROWN_EXP_BOTTLE, EntityType.TIPPED_ARROW, EntityType.TRIDENT,
+            EntityType.SPLASH_POTION, EntityType.THROWN_EXP_BOTTLE, EntityType.TIPPED_ARROW,
             EntityType.UNKNOWN, EntityType.WITHER_SKULL);
 
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {

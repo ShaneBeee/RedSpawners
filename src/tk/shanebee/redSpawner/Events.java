@@ -41,14 +41,14 @@ public class Events implements Listener {
             Player p = e.getPlayer();
             ItemStack tool = p.getInventory().getItemInMainHand();
             Block block = e.getBlock();
-            if ((block.getType() == Material.SPAWNER) &&
+            if ((block.getType() == Material.MOB_SPAWNER) &&
                     (tool != null) &&
                     (tool.containsEnchantment(Enchantment.SILK_TOUCH))) {
                 if (p.hasPermission("redspawner.spawner.break")) {
                     World w = e.getBlock().getWorld();
                     Location loc = block.getLocation().add(0.0D, 0.5D, 0.0D);
                     CreatureSpawner spawner = (CreatureSpawner) block.getState();
-                    ItemStack item = new ItemStack(Material.SPAWNER, 1);
+                    ItemStack item = new ItemStack(Material.MOB_SPAWNER, 1);
                     ItemMeta meta = item.getItemMeta();
                     meta.setDisplayName(ChatColor.AQUA + "Mob Spawner");
                     ArrayList<String> lore = new ArrayList<>();
@@ -67,7 +67,7 @@ public class Events implements Listener {
             Block block = e.getBlock();
             Material mat = block.getType();
             Player p = e.getPlayer();
-            if (mat == Material.SPAWNER) {
+            if (mat == Material.MOB_SPAWNER) {
                 if (p.hasPermission("redspawner.spawner.place")) {
                     ItemStack item = e.getItemInHand();
                     String itemName = item.getItemMeta().getDisplayName();

@@ -1,8 +1,7 @@
 main: tk.shanebee.redSpawner.RedSpawner
 name: RedSpawner
-version: 1.0.0
+version: 1.1.0[Legacy]
 author: ShaneBee
-api-version: 1.13
 description: Require redstone to power mob spawners
 website: https://ShaneBee.tk
 
